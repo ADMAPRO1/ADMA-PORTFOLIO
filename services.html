@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Services Page</title>
+        <style>
+    body {
+      font-family: sans-serif;
+      margin: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 20px;
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        padding: 15px;
+        margin-bottom: 10px;
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+    }
+
+    li:hover {
+        background-color: #e0e0e0;
+    }
+
+    .service-image {
+      float: left;
+      margin-right: 20px;
+      width: 200px;
+
+    }
+
+    .service-description {
+      margin-top: 10px;
+    }
+    button {
+        display: block;
+        margin: 0 auto;
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+        button:hover {
+            background-color: #45a049;
+        }
+    
+        ul, ol {
+            list-style-type: none; /* Remove default list styles */
+            padding: 10px;
+            margin: 0;
+            height: auto;
+        }
+    
+        li {
+            padding: 20px;
+            margin-bottom: 5px;
+            background-color: #ffa600;
+            border: 1px solid #0e0d0d;
+            border-radius: 5px;
+            height: fit-content;
+        }
+    
+        li:hover {
+            background-color: rgba(192, 191, 190, 0.74);
+        }
+        .background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        ul {
+            display: flex;
+            margin: 0 auto;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            list-style: none;
+        }
+        li {
+            color: rgba(54, 53, 54, 0.747);
+            border: 5px solid rgb(255, 115, 0);
+            border-radius: 15px;
+            padding: 10px;
+            background-color: bisque;
+        }
+        li a {
+            list-style:none;
+            text-decoration: none;
+            color:#ff4500;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        h1 {
+            text-align: center;
+            color: white;
+            font-size: 40px;
+        }
+    </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li style="margin: 0 15px;">
+                    <a href="home.html"">Home</a>
+                </li>
+                <li style="margin: 0 15px;">
+                    <a href="about.html">About</a>
+                </li>
+                <li style="margin: 0 15px;">
+                    <a href="services.html">Services</a>
+                </li>
+                <li style="margin: 0 15px;">
+                    <a href="portfolio.html">Portfolio</a>
+                </li>
+                <li style="margin: 0 15px;">
+                    <a href="contact me.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <video autoplay muted loop class="background-video">
+            <source src="sekoma.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <h1>Our Services</h1>
+
+        <ul style="gap: 30px;">
+            <li>
+                <img class="service-image1" src="web-design.jpg"
+                    alt="Web Design" >
+                <h2>Web Design</h2>
+                <p class="service-description">I create beautiful and functional
+                    websites that are tailored to your specific needs.</p>
+            </li>
+            <li>
+                <img class="service-image" src="frontend-development.jpg"
+                    alt="Frontend Development">
+                <h2>Frontend Development</h2>
+                <p class="service-description">I build the front-end of websites
+                    using HTML, CSS, and JavaScript.</p>
+            </li>
+            <li>
+                <img class="service-image" src="graphic-design.jpg"
+                    alt="Graphic Design">
+                <h2>Graphic Design</h2>
+                <p class="service-description">I create eye-catching graphics
+                    for your website, social media, and marketing materials.</p>
+            </li>
+            <li>
+                <img class="service-image" src="content-creation.jpg"
+                    alt="Content Creation">
+                <h2>Content Creation</h2>
+                <p class="service-description">I write engaging and informative
+                    content for your website, blog, and social media.</p>
+            </li>
+        </ul>
+        <br>
+        <button>learn more</button>
+    </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+ul {
+            display: flex;
+            margin: 0 auto;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            list-style: none;
+        }
+        li {
+            color: rgba(54, 53, 54, 0.747);
+            border: 5px solid rgb(255, 115, 0);
+            border-radius: 15px;
+            padding: 10px;
+            background-color: bisque;
+        }
+        li a {
+            list-style:none;
+            text-decoration: none;
+            color:#ff4500;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li style="margin: 0 15px;">
+                <a href="home.html"">Home</a>
+            </li>
+            <li style="margin: 0 15px;">
+                <a href="about.html">About</a>
+            </li>
+            <li style="margin: 0 15px;">
+                <a href="services.html">Services</a>
+            </li>
+            <li style="margin: 0 15px;">
+                <a href="portfolio.html">Portfolio</a>
+            </li>
+            <li style="margin: 0 15px;">
+                <a href="contact me.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <video autoplay muted loop class="background-video">
+        <source src="sekoma.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+    <h1>CONTACT ME PAGE </h1>
+    <div class="contact-info">
+        <div class="contact-form">
+    <form action="contact.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Send Message</button>
+    </div>
+    .conta
+    </div>
+</body>
