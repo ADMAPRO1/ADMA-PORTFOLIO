@@ -263,5 +263,32 @@
             <!-- Add more grid items as needed -->
         </div>
     </div>
+    <div style="position: fixed; top: 10px; right: 10px;"></div>
+        <button onclick="switchLanguage('en')" style="margin-right: 5px;">English</button>
+        <button onclick="switchLanguage('rw')">Kinyarwanda</button>
+    </div>
+    <script>
+        function switchLanguage(lang) {
+            if (lang === 'rw') {
+                document.querySelectorAll('a').forEach(el => {
+                    if (el.textContent === 'Home') el.textContent = 'Ahabanza';
+                    if (el.textContent === 'About') el.textContent = 'Ibyerekeye';
+                    if (el.textContent === 'Services') el.textContent = 'Serivisi';
+                    if (el.textContent === 'Portfolio') el.textContent = 'Ibyo twakoze';
+                    if (el.textContent === 'Contact') el.textContent = 'Tuvugane';
+                    if (el.textContent.includes('View in details')) el.textContent = 'Reba ibisobanuro';
+                });
+            } else {
+                document.querySelectorAll('a').forEach(el => {
+                    if (el.textContent === 'Ahabanza') el.textContent = 'Home';
+                    if (el.textContent === 'Ibyerekeye') el.textContent = 'About';
+                    if (el.textContent === 'Serivisi') el.textContent = 'Services';
+                    if (el.textContent === 'Ibyo twakoze') el.textContent = 'Portfolio';
+                    if (el.textContent === 'Tuvugane') el.textContent = 'Contact';
+                    if (el.textContent.includes('Reba ibisobanuro')) el.textContent = 'View in details';
+                });
+            }
+        }
+    </script>
 </body>
 </html>
