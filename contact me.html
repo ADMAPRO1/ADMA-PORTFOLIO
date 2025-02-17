@@ -37,6 +37,112 @@ ul {
             object-fit: cover;
             z-index: -1;
         }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            position: relative;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            color: #ff4500;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 50px;
+        }
+
+        .contact-form, .contact-information {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 45%;
+            margin-bottom: 20px;
+        }
+
+        .contact-form label, .contact-form input, .contact-form textarea {
+            display: block;
+            width: 550px;
+            margin-bottom: 10px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background-color: #ff4500;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #e03e00;
+        }
+
+        .contact-information h2, .contact-information h3 {
+            color: #ff4500;
+        }
+
+        .contact-information p, .contact-information ul {
+            margin: 10px 0;
+        }
+
+        .contact-information ul {
+            padding: 0;
+        }
+
+        .contact-information li {
+            list-style: none;
+            margin: 5px 0;
+        }
+
+        .contact-information a {
+            color: #ff4500;
+            text-decoration: none;
+        }
+
+        .contact-information a:hover {
+            text-decoration: underline;
+        }
+        .location {
+            display: flex;
+            justify-content: center;
+            margin: 50px 0;
+        }
+        iframe {
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 600px;
+        }
+
+        @media (max-width: 768px) {
+            .contact-form, .contact-information {
+                width: 100%;
+            }
+            ul {
+                flex-direction: column;
+            }
+            li {
+                margin: 10px 0;
+            }
+        }
+        .contact-information ul li {
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
@@ -75,6 +181,20 @@ ul {
         <textarea id="message" name="message" required></textarea>
         <button type="submit">Send Message</button>
     </div>
-    .conta
+    <div class="contact-information">
+        <h2>Contact Information</h2>
+        <p>Email: abizeradieu1106@gmail.com</p>
+        <p>Phone: +250 791 824 626</p>
+        <h3>Follow me on social media:</h3>
+        <ul>
+            <li><a href="https://www.facebook.com/yourprofile" target="_blank">Facebook</a></li>
+            <li><a href="https://www.twitter.com/yourprofile" target="_blank">Twitter</a></li>
+            <li><a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/yourprofile" target="_blank">Instagram</a></li>
+        </ul>
+    </div>
+    <div class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d194.37498248619153!2d30.05124844070455!3d-1.976176250037574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2srw!4v1739726678334!5m2!1sen!2srw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
     </div>
 </body>

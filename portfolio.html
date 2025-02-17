@@ -11,6 +11,7 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            position: relative;
         }
         .portfolio {
             max-width: 1200px;
@@ -107,6 +108,28 @@
             height: 100%;
             object-fit: cover;
             z-index: -1;
+        }
+        .grid-item {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            width: calc(33.333% - 20px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        .grid-item img {
+            width: 100%;
+            height: auto;
+            flex-shrink: 0;
+        }
+        .grid-item h3, .grid-item p, .grid-item a {
+            margin: 10px;
+        }
+        .grid-item a {
+            margin-top: auto;
         }
     </style>
 </head>
